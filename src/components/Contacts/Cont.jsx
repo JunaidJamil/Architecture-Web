@@ -1,6 +1,6 @@
 import React from 'react'
 import './Cont.css'
-import Map from './Map'
+
 const Cont = () => {
     return (
         <>
