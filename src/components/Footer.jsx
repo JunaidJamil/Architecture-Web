@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
-import { IoMailOutline } from "react-icons/io5";    
+import { IoMailOutline } from "react-icons/io5";
 const Footer = () => {
     return (
 
@@ -41,8 +41,12 @@ const Footer = () => {
                                     <p>Contacts</p>
                                 </div>
                                 <ul className='footer-cnt-list'>
-                                    <li><a href='https://www.google.com/maps' target='_blank'> <IoLocationOutline color='white'/><p>1234 Sample Street
-                                        Austin Texas 78704</p> </a></li>
+                                    <li>
+                                        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+                                            <IoLocationOutline color="white" />
+                                            <p>1234 Sample Street</p>
+                                        </a>
+                                    </li>
                                     <li><a href="tel:512.333.2222"><FiPhone /><p>512.333.2222</p></a></li>
                                     <li><a href="mailto:sampleemail@gmail.com"><IoMailOutline /> sampleemail@gmail.com</a></li>
 
@@ -51,24 +55,24 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-3">
                             <div className='footer-list'>
-                            <div className='footer-head'>
-                                    <p>Social Media</p>    
-                            </div>
-                            <div className='footer-social'>
-                            <FaFacebookF className='footer-icon'/>
-                            <FaTwitter className='footer-icon'/>
-                            <FaLinkedin className='footer-icon'/>
-                            <FaPinterestP className='footer-icon'/>
-                            </div>
+                                <div className='footer-head'>
+                                    <p>Social Media</p>
+                                </div>
+                                <div className='footer-social'>
+                                    <FaFacebookF className='footer-icon' />
+                                    <FaTwitter className='footer-icon' />
+                                    <FaLinkedin className='footer-icon' />
+                                    <FaPinterestP className='footer-icon' />
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                    <hr className='hr-tag'/>
-                    <div className='footer-rights'>
+                <hr className='hr-tag' />
+                <div className='footer-rights'>
                     <p>© 2021 All Rights Reserved</p>
-                    </div>
+                </div>
             </footer>
 
         </>
