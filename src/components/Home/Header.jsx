@@ -66,7 +66,7 @@ const Header = () => {
               <div className="slider-container" data-aos="fade-left">
                 <Slider {...settings}>
                   <div className="slides">
-                    <img src={slide} />
+                    <img src={slide} alt=''/>
                     <div className='view-project'>
                       <Link to="/Project">
                         View Project
@@ -75,7 +75,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="slides">
-                    <img src={slide2} />
+                    <img src={slide2} alt=''/>
                     <div className='view-project'>
                       <Link to="/Project">
                         View Project
@@ -84,7 +84,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="slides">
-                    <img src={slide3} />
+                    <img src={slide3} alt=''/>
                     <div className='view-project'>
                       <Link to="/Project">
                         View Project
@@ -93,7 +93,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="slides">
-                    <img src={slide4} />
+                    <img src={slide4} alt=''/>
                     <div className='view-project'>
                       <Link to="/Project">
                         View Project

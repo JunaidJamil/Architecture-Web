@@ -21,26 +21,32 @@ export const Navbar = () => {
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    if (scrollTop > lastScrollTop) {
-      setIsVisible(false); // Hide navbar on scroll down
-    } else {
-      setIsVisible(true); // Show navbar on scroll up
-    }
-    setLastScrollTop(scrollTop);
 
+    // Hide navbar on scroll down, show on scroll up
+    if (scrollTop > lastScrollTop) {
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+
+    // Change navbar color based on scroll position
     if (scrollTop >= 50) {
       setNavColor(true);
     } else {
       setNavColor(false);
     }
+
+    // Update last scroll position
+    setLastScrollTop(scrollTop);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollTop]);
+  }, [lastScrollTop]); // Correctly add lastScrollTop as a dependency
 
   const closeMenu = () => {
     setMenu(false);
