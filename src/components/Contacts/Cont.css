@@ -1,0 +1,48 @@
+.Contact-page {
+    margin-top: 160px;
+    margin-bottom: 40px;
+}
+.Contact-head {
+    margin-bottom: 60px;
+}
+
+.Contact-head h2{
+ color: grey;
+ font-family: "roboto-light";
+ font-size: 60px;
+}
+
+.Contact-head h2 span {
+    color: #000000;
+    font-family: "roboto-black";
+}
+
+.contact-street {
+margin-bottom: 30px;
+}
+
+.contact-info h3{
+    color: #000000;
+    font-family: "roboto-black";
+}
+
+.address {
+ margin-bottom: 30px;
+}
+.address span {
+    color: #000000;
+    font-family: "roboto-black";
+    margin-bottom: 50px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-family: "roboto-light";
+    color: #000000;
+    margin-top: 90px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
