@@ -11,7 +11,7 @@ import "./Home.css"
 
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       className="slick-nexts"
@@ -26,7 +26,7 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       className="slick"
@@ -54,8 +54,6 @@ const Header = () => {
   return (
     <>
       <header className='header-section'>
-
-
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
@@ -64,7 +62,6 @@ const Header = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident at assumenda sunt pariatur suscipit, a, quis odit accusantium facere facilis ipsa ad laboriosam quasi cumque officiis? Laborum, qui nobis!</p>
               </div>
             </div>
-
             <div className="col-lg-7">
               <div className="slider-container" data-aos="fade-left">
                 <Slider {...settings}>

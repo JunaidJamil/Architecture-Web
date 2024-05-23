@@ -23,11 +23,9 @@ const Focus = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </section>
         </>
 
