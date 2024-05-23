@@ -6,6 +6,9 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
+import { FiPhone } from "react-icons/fi";
+import { IoMailOutline } from "react-icons/io5";    
 const Footer = () => {
     return (
 
@@ -18,7 +21,7 @@ const Footer = () => {
                                 <img src={Footerlogo} alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-2">
                             <div className='footer-list'>
                                 <div className='footer-head'>
                                     <p>Information</p>
@@ -32,17 +35,16 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-4">
                             <div className='footer-list'>
                                 <div className='footer-head'>
                                     <p>Contacts</p>
                                 </div>
-                                <ul>
-                                    <li><Link>1234 Sample Street
-                                        Austin Texas 78704</Link></li>
-                                    <li><Link>512.333.2222</Link></li>
-                                    <li><Link>Projects</Link></li>
-                                    <li><Link>sampleemail@gmail.com</Link></li>
+                                <ul className='footer-cnt-list'>
+                                    <li><a href='https://www.google.com/maps' target='_blank'> <IoLocationOutline color='white'/><p>1234 Sample Street
+                                        Austin Texas 78704</p> </a></li>
+                                    <li><a href="tel:512.333.2222"><FiPhone /><p>512.333.2222</p></a></li>
+                                    <li><a href="mailto:sampleemail@gmail.com"><IoMailOutline /> sampleemail@gmail.com</a></li>
 
                                 </ul>
                             </div>

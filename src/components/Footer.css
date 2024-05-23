@@ -68,3 +68,14 @@
     color: #ffffff;
     font-family: "robot-light";
 }
+
+.footer-cnt-list li a {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-cnt-list li a p {
+    margin-bottom: 0px;
+}
