@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import logo from '../assets/images/logo.png';
 import { IoMdMenu } from "react-icons/io";
 import { GiCancel } from "react-icons/gi";
@@ -19,7 +19,7 @@ export const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const scrollTop = window.scrollY;
 
     // Hide navbar on scroll down, show on scroll up
@@ -38,7 +38,7 @@ export const Navbar = () => {
 
     // Update last scroll position
     setLastScrollTop(scrollTop);
-  };
+  }, [lastScrollTop]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -46,7 +46,7 @@ export const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollTop]); // Correctly add lastScrollTop as a dependency
+  }, [handleScroll]); // Add handleScroll as a dependency
 
   const closeMenu = () => {
     setMenu(false);
