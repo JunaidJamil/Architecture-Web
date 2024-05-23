@@ -41,7 +41,7 @@ function SamplePrevArrow(props) {
 const Header = () => {
   
   const settings = {
-    // autoplay: true,
+    autoplay: true,
     fade: true,
     infinite: true,
     autoplaySpeed: 2000,
